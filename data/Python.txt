@@ -1,0 +1,38 @@
+# ==========================================
+# PYTHON QUICK REFERENCE CHEAT SHEET
+# ==========================================
+
+# 1. Variables and Data Types
+name = "Alice"           # String
+age = 30                 # Integer
+pi = 3.14159             # Float
+is_learning = True       # Boolean
+items = [1, 2, 3, 4]     # List
+person = {"name": "Bob"} # Dictionary
+
+# 2. Conditional Statements
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+# 3. Loops
+for i in range(5):
+    print(f"Iteration {i}")
+
+while age < 35:
+    age += 1
+
+# 4. Functions
+def greet(user_name):
+    """Returns a friendly greeting."""
+    return f"Hello, {user_name}!"
+
+print(greet(name))
+
+# 5. File Handling Example
+try:
+    with open("example.txt", "w") as f:
+        f.write("Hello World")
+except IOError as e:
+    print(f"An error occurred: {e}")
